@@ -19,14 +19,16 @@ namespace TestAd
         private void clickImage_Click(object sender, EventArgs e)
         {
             calc.BannerEarning[calc.Id]++;
-            clickImage.Image = calc.ReturnBanner();
             SetInfo();
+            clickImage.Image = calc.ReturnBanner();
+            
         }
 
         private void refreshClick_Click(object sender, EventArgs e)
         {
-            clickImage.Image = calc.ReturnBanner();
             SetInfo();
+            clickImage.Image = calc.ReturnBanner();
+            
         }
         private void SetInfo() 
         {
@@ -47,6 +49,6 @@ namespace TestAd
             textBox3.Text = (calc.BannerEarning[2] / calc.BannerOutput[2]).ToString("F");
         }
 
-        
+       
     }
 }

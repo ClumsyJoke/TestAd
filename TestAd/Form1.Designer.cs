@@ -59,6 +59,7 @@ namespace TestAd
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.clickImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).BeginInit();
@@ -271,6 +272,7 @@ namespace TestAd
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(2, 14);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -319,6 +321,7 @@ namespace TestAd
             // 
             // textBoxTwoOutput
             // 
+            this.textBoxTwoOutput.HideSelection = false;
             this.textBoxTwoOutput.Location = new System.Drawing.Point(161, 47);
             this.textBoxTwoOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTwoOutput.Name = "textBoxTwoOutput";
@@ -333,7 +336,7 @@ namespace TestAd
             this.textBoxOneOutput.Name = "textBoxOneOutput";
             this.textBoxOneOutput.ReadOnly = true;
             this.textBoxOneOutput.Size = new System.Drawing.Size(33, 23);
-            this.textBoxOneOutput.TabIndex = 6;
+            this.textBoxOneOutput.TabIndex = 20;
             // 
             // label2
             // 
@@ -395,6 +398,13 @@ namespace TestAd
             this.label4.TabIndex = 3;
             this.label4.Text = "Кликов на 1 баннер";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(169, 47);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(11, 23);
+            this.textBox4.TabIndex = 6;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.clickImage);
@@ -410,7 +420,7 @@ namespace TestAd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 360);
+            this.ClientSize = new System.Drawing.Size(795, 365);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -465,6 +475,7 @@ namespace TestAd
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
