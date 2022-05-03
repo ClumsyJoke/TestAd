@@ -31,8 +31,14 @@ namespace TestAd
         {
             this.clickImage = new System.Windows.Forms.PictureBox();
             this.refreshClick = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxThreeInterval = new System.Windows.Forms.TextBox();
             this.textBoxTwoInterval = new System.Windows.Forms.TextBox();
@@ -53,18 +59,20 @@ namespace TestAd
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.clickImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // clickImage
             // 
-            this.clickImage.Location = new System.Drawing.Point(14, 14);
-            this.clickImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clickImage.Location = new System.Drawing.Point(15, 18);
+            this.clickImage.Margin = new System.Windows.Forms.Padding(2);
             this.clickImage.Name = "clickImage";
             this.clickImage.Size = new System.Drawing.Size(355, 245);
             this.clickImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,8 +84,8 @@ namespace TestAd
             // 
             this.refreshClick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.refreshClick.Image = global::TestAd.Properties.Resources.refresh_icon_png_2;
-            this.refreshClick.Location = new System.Drawing.Point(159, 263);
-            this.refreshClick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.refreshClick.Location = new System.Drawing.Point(172, 273);
+            this.refreshClick.Margin = new System.Windows.Forms.Padding(2);
             this.refreshClick.Name = "refreshClick";
             this.refreshClick.Size = new System.Drawing.Size(46, 75);
             this.refreshClick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,25 +93,94 @@ namespace TestAd
             this.refreshClick.TabStop = false;
             this.refreshClick.Click += new System.EventHandler(this.refreshClick_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.clickImage);
-            this.panel1.Controls.Add(this.refreshClick);
-            this.panel1.Location = new System.Drawing.Point(9, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(385, 346);
-            this.panel1.TabIndex = 3;
-            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(398, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(406, 11);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 346);
+            this.panel2.Size = new System.Drawing.Size(378, 345);
             this.panel2.TabIndex = 4;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Location = new System.Drawing.Point(202, 134);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(170, 105);
+            this.groupBox4.TabIndex = 8;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Оценка математического ожидания";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(75, 77);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(76, 22);
+            this.textBox3.TabIndex = 11;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(75, 51);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(76, 22);
+            this.textBox2.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(75, 24);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(76, 22);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(5, 80);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 16);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "3 баннер";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(5, 53);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 16);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "2 баннер";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(5, 27);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(66, 16);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "1 баннер";
             // 
             // groupBox2
             // 
@@ -115,10 +192,10 @@ namespace TestAd
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.Location = new System.Drawing.Point(2, 134);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(370, 105);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(194, 105);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Доверительный интервал";
@@ -126,7 +203,7 @@ namespace TestAd
             // textBoxThreeInterval
             // 
             this.textBoxThreeInterval.Location = new System.Drawing.Point(104, 78);
-            this.textBoxThreeInterval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxThreeInterval.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxThreeInterval.Name = "textBoxThreeInterval";
             this.textBoxThreeInterval.ReadOnly = true;
             this.textBoxThreeInterval.Size = new System.Drawing.Size(76, 23);
@@ -135,7 +212,7 @@ namespace TestAd
             // textBoxTwoInterval
             // 
             this.textBoxTwoInterval.Location = new System.Drawing.Point(104, 52);
-            this.textBoxTwoInterval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTwoInterval.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTwoInterval.Name = "textBoxTwoInterval";
             this.textBoxTwoInterval.ReadOnly = true;
             this.textBoxTwoInterval.Size = new System.Drawing.Size(76, 23);
@@ -144,7 +221,7 @@ namespace TestAd
             // textBoxOneInterval
             // 
             this.textBoxOneInterval.Location = new System.Drawing.Point(104, 24);
-            this.textBoxOneInterval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOneInterval.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOneInterval.Name = "textBoxOneInterval";
             this.textBoxOneInterval.ReadOnly = true;
             this.textBoxOneInterval.Size = new System.Drawing.Size(76, 23);
@@ -196,9 +273,9 @@ namespace TestAd
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(2, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(370, 115);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
@@ -207,7 +284,7 @@ namespace TestAd
             // textBoxThreeClick
             // 
             this.textBoxThreeClick.Location = new System.Drawing.Point(337, 83);
-            this.textBoxThreeClick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxThreeClick.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxThreeClick.Name = "textBoxThreeClick";
             this.textBoxThreeClick.ReadOnly = true;
             this.textBoxThreeClick.Size = new System.Drawing.Size(33, 23);
@@ -216,7 +293,7 @@ namespace TestAd
             // textBoxTwoClick
             // 
             this.textBoxTwoClick.Location = new System.Drawing.Point(337, 50);
-            this.textBoxTwoClick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTwoClick.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTwoClick.Name = "textBoxTwoClick";
             this.textBoxTwoClick.ReadOnly = true;
             this.textBoxTwoClick.Size = new System.Drawing.Size(33, 23);
@@ -225,7 +302,7 @@ namespace TestAd
             // textBoxOneClick
             // 
             this.textBoxOneClick.Location = new System.Drawing.Point(337, 18);
-            this.textBoxOneClick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOneClick.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOneClick.Name = "textBoxOneClick";
             this.textBoxOneClick.ReadOnly = true;
             this.textBoxOneClick.Size = new System.Drawing.Size(33, 23);
@@ -234,7 +311,7 @@ namespace TestAd
             // textBoxThreeOutput
             // 
             this.textBoxThreeOutput.Location = new System.Drawing.Point(161, 78);
-            this.textBoxThreeOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxThreeOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxThreeOutput.Name = "textBoxThreeOutput";
             this.textBoxThreeOutput.ReadOnly = true;
             this.textBoxThreeOutput.Size = new System.Drawing.Size(33, 23);
@@ -243,7 +320,7 @@ namespace TestAd
             // textBoxTwoOutput
             // 
             this.textBoxTwoOutput.Location = new System.Drawing.Point(161, 47);
-            this.textBoxTwoOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTwoOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTwoOutput.Name = "textBoxTwoOutput";
             this.textBoxTwoOutput.ReadOnly = true;
             this.textBoxTwoOutput.Size = new System.Drawing.Size(33, 23);
@@ -252,7 +329,7 @@ namespace TestAd
             // textBoxOneOutput
             // 
             this.textBoxOneOutput.Location = new System.Drawing.Point(161, 17);
-            this.textBoxOneOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOneOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOneOutput.Name = "textBoxOneOutput";
             this.textBoxOneOutput.ReadOnly = true;
             this.textBoxOneOutput.Size = new System.Drawing.Size(33, 23);
@@ -318,26 +395,39 @@ namespace TestAd
             this.label4.TabIndex = 3;
             this.label4.Text = "Кликов на 1 баннер";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.clickImage);
+            this.groupBox3.Controls.Add(this.refreshClick);
+            this.groupBox3.Location = new System.Drawing.Point(12, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(387, 353);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Имитация работы";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 360);
+            this.ClientSize = new System.Drawing.Size(795, 360);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Демонстрация стратегии на примере";
             ((System.ComponentModel.ISupportInitialize)(this.clickImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -346,7 +436,6 @@ namespace TestAd
 
         private System.Windows.Forms.PictureBox clickImage;
         private System.Windows.Forms.PictureBox refreshClick;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -368,6 +457,14 @@ namespace TestAd
         private System.Windows.Forms.TextBox textBoxThreeInterval;
         private System.Windows.Forms.TextBox textBoxTwoInterval;
         private System.Windows.Forms.TextBox textBoxOneInterval;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 

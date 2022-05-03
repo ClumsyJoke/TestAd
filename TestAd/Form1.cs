@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TestAd
@@ -48,6 +41,12 @@ namespace TestAd
             textBoxOneInterval.Text = calc.BannerInterval[0].ToString("F");
             textBoxTwoInterval.Text = calc.BannerInterval[1].ToString("F");
             textBoxThreeInterval.Text = calc.BannerInterval[2].ToString("F");
+
+            textBox1.Text = (calc.BannerEarning[0]/ calc.BannerOutput[0]).ToString("F");
+            textBox2.Text = (calc.BannerEarning[1] / calc.BannerOutput[1]).ToString("F");
+            textBox3.Text = (calc.BannerEarning[2] / calc.BannerOutput[2]).ToString("F");
         }
+
+        
     }
 }
