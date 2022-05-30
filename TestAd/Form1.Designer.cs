@@ -29,8 +29,6 @@ namespace TestAd
         /// </summary>
         private void InitializeComponent()
         {
-            this.clickImage = new System.Windows.Forms.PictureBox();
-            this.refreshClick = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -61,48 +59,26 @@ namespace TestAd
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.clickImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).BeginInit();
+            this.clickImage = new System.Windows.Forms.PictureBox();
+            this.refreshClick = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clickImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).BeginInit();
             this.SuspendLayout();
-            // 
-            // clickImage
-            // 
-            this.clickImage.Location = new System.Drawing.Point(15, 18);
-            this.clickImage.Margin = new System.Windows.Forms.Padding(2);
-            this.clickImage.Name = "clickImage";
-            this.clickImage.Size = new System.Drawing.Size(355, 245);
-            this.clickImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.clickImage.TabIndex = 0;
-            this.clickImage.TabStop = false;
-            this.clickImage.Click += new System.EventHandler(this.clickImage_Click);
-            // 
-            // refreshClick
-            // 
-            this.refreshClick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.refreshClick.Image = global::TestAd.Properties.Resources.refresh_icon_png_2;
-            this.refreshClick.Location = new System.Drawing.Point(172, 273);
-            this.refreshClick.Margin = new System.Windows.Forms.Padding(2);
-            this.refreshClick.Name = "refreshClick";
-            this.refreshClick.Size = new System.Drawing.Size(46, 75);
-            this.refreshClick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.refreshClick.TabIndex = 1;
-            this.refreshClick.TabStop = false;
-            this.refreshClick.Click += new System.EventHandler(this.refreshClick_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(406, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(533, 11);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 345);
+            this.panel2.Size = new System.Drawing.Size(504, 314);
             this.panel2.TabIndex = 4;
             // 
             // groupBox4
@@ -113,9 +89,11 @@ namespace TestAd
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Location = new System.Drawing.Point(202, 134);
+            this.groupBox4.Location = new System.Drawing.Point(269, 165);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(170, 105);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(227, 129);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Оценка математического ожидания";
@@ -123,41 +101,40 @@ namespace TestAd
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(75, 77);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Location = new System.Drawing.Point(100, 95);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(76, 22);
+            this.textBox3.Size = new System.Drawing.Size(100, 26);
             this.textBox3.TabIndex = 11;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(75, 51);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Location = new System.Drawing.Point(100, 63);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(76, 22);
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
             this.textBox2.TabIndex = 10;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(75, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(100, 30);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(76, 22);
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(5, 80);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(7, 98);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 16);
+            this.label10.Size = new System.Drawing.Size(83, 20);
             this.label10.TabIndex = 8;
             this.label10.Text = "3 баннер";
             // 
@@ -165,10 +142,9 @@ namespace TestAd
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(5, 53);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(7, 65);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 16);
+            this.label11.Size = new System.Drawing.Size(83, 20);
             this.label11.TabIndex = 7;
             this.label11.Text = "2 баннер";
             // 
@@ -176,10 +152,9 @@ namespace TestAd
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(5, 27);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(7, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 16);
+            this.label12.Size = new System.Drawing.Size(83, 20);
             this.label12.TabIndex = 6;
             this.label12.Text = "1 баннер";
             // 
@@ -192,69 +167,66 @@ namespace TestAd
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(2, 134);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(3, 165);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(194, 105);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(259, 129);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Доверительный интервал";
             // 
             // textBoxThreeInterval
             // 
-            this.textBoxThreeInterval.Location = new System.Drawing.Point(104, 78);
-            this.textBoxThreeInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxThreeInterval.Location = new System.Drawing.Point(139, 96);
+            this.textBoxThreeInterval.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxThreeInterval.Name = "textBoxThreeInterval";
             this.textBoxThreeInterval.ReadOnly = true;
-            this.textBoxThreeInterval.Size = new System.Drawing.Size(76, 23);
+            this.textBoxThreeInterval.Size = new System.Drawing.Size(100, 27);
             this.textBoxThreeInterval.TabIndex = 5;
             // 
             // textBoxTwoInterval
             // 
-            this.textBoxTwoInterval.Location = new System.Drawing.Point(104, 52);
-            this.textBoxTwoInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTwoInterval.Location = new System.Drawing.Point(139, 64);
+            this.textBoxTwoInterval.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTwoInterval.Name = "textBoxTwoInterval";
             this.textBoxTwoInterval.ReadOnly = true;
-            this.textBoxTwoInterval.Size = new System.Drawing.Size(76, 23);
+            this.textBoxTwoInterval.Size = new System.Drawing.Size(100, 27);
             this.textBoxTwoInterval.TabIndex = 4;
             // 
             // textBoxOneInterval
             // 
-            this.textBoxOneInterval.Location = new System.Drawing.Point(104, 24);
-            this.textBoxOneInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOneInterval.Location = new System.Drawing.Point(139, 30);
+            this.textBoxOneInterval.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOneInterval.Name = "textBoxOneInterval";
             this.textBoxOneInterval.ReadOnly = true;
-            this.textBoxOneInterval.Size = new System.Drawing.Size(76, 23);
+            this.textBoxOneInterval.Size = new System.Drawing.Size(100, 27);
             this.textBoxOneInterval.TabIndex = 3;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 80);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(19, 98);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 17);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 2;
             this.label9.Text = "3 баннер";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 54);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(19, 66);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 17);
+            this.label8.Size = new System.Drawing.Size(83, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "2 баннер";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 27);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(19, 33);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.Size = new System.Drawing.Size(83, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "1 баннер";
             // 
@@ -274,162 +246,181 @@ namespace TestAd
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(2, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(3, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(370, 115);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(493, 142);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Основная статистика";
             // 
             // textBoxThreeClick
             // 
-            this.textBoxThreeClick.Location = new System.Drawing.Point(337, 83);
-            this.textBoxThreeClick.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxThreeClick.Location = new System.Drawing.Point(449, 102);
+            this.textBoxThreeClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxThreeClick.Name = "textBoxThreeClick";
             this.textBoxThreeClick.ReadOnly = true;
-            this.textBoxThreeClick.Size = new System.Drawing.Size(33, 23);
+            this.textBoxThreeClick.Size = new System.Drawing.Size(43, 27);
             this.textBoxThreeClick.TabIndex = 11;
             // 
             // textBoxTwoClick
             // 
-            this.textBoxTwoClick.Location = new System.Drawing.Point(337, 50);
-            this.textBoxTwoClick.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTwoClick.Location = new System.Drawing.Point(449, 62);
+            this.textBoxTwoClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTwoClick.Name = "textBoxTwoClick";
             this.textBoxTwoClick.ReadOnly = true;
-            this.textBoxTwoClick.Size = new System.Drawing.Size(33, 23);
+            this.textBoxTwoClick.Size = new System.Drawing.Size(43, 27);
             this.textBoxTwoClick.TabIndex = 10;
             // 
             // textBoxOneClick
             // 
-            this.textBoxOneClick.Location = new System.Drawing.Point(337, 18);
-            this.textBoxOneClick.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOneClick.Location = new System.Drawing.Point(449, 22);
+            this.textBoxOneClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOneClick.Name = "textBoxOneClick";
             this.textBoxOneClick.ReadOnly = true;
-            this.textBoxOneClick.Size = new System.Drawing.Size(33, 23);
+            this.textBoxOneClick.Size = new System.Drawing.Size(43, 27);
             this.textBoxOneClick.TabIndex = 9;
             // 
             // textBoxThreeOutput
             // 
-            this.textBoxThreeOutput.Location = new System.Drawing.Point(161, 78);
-            this.textBoxThreeOutput.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxThreeOutput.Location = new System.Drawing.Point(215, 96);
+            this.textBoxThreeOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxThreeOutput.Name = "textBoxThreeOutput";
             this.textBoxThreeOutput.ReadOnly = true;
-            this.textBoxThreeOutput.Size = new System.Drawing.Size(33, 23);
+            this.textBoxThreeOutput.Size = new System.Drawing.Size(43, 27);
             this.textBoxThreeOutput.TabIndex = 8;
             // 
             // textBoxTwoOutput
             // 
             this.textBoxTwoOutput.HideSelection = false;
-            this.textBoxTwoOutput.Location = new System.Drawing.Point(161, 47);
-            this.textBoxTwoOutput.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTwoOutput.Location = new System.Drawing.Point(215, 58);
+            this.textBoxTwoOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTwoOutput.Name = "textBoxTwoOutput";
             this.textBoxTwoOutput.ReadOnly = true;
-            this.textBoxTwoOutput.Size = new System.Drawing.Size(33, 23);
+            this.textBoxTwoOutput.Size = new System.Drawing.Size(43, 27);
             this.textBoxTwoOutput.TabIndex = 7;
             // 
             // textBoxOneOutput
             // 
-            this.textBoxOneOutput.Location = new System.Drawing.Point(161, 17);
-            this.textBoxOneOutput.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOneOutput.Location = new System.Drawing.Point(215, 21);
+            this.textBoxOneOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOneOutput.Name = "textBoxOneOutput";
             this.textBoxOneOutput.ReadOnly = true;
-            this.textBoxOneOutput.Size = new System.Drawing.Size(33, 23);
+            this.textBoxOneOutput.Size = new System.Drawing.Size(43, 27);
             this.textBoxOneOutput.TabIndex = 20;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 53);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(5, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 17);
+            this.label2.Size = new System.Drawing.Size(191, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Появлений 2 баннера";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(198, 85);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(264, 105);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 17);
+            this.label6.Size = new System.Drawing.Size(173, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Кликов на 3 баннер";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(5, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 17);
+            this.label1.Size = new System.Drawing.Size(191, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Появлений 1 баннера";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(198, 53);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(264, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 17);
+            this.label5.Size = new System.Drawing.Size(173, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Кликов на 2 баннер";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 85);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(5, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 17);
+            this.label3.Size = new System.Drawing.Size(191, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Появлений 3 баннера";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(198, 20);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(264, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 17);
+            this.label4.Size = new System.Drawing.Size(173, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Кликов на 1 баннер";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(169, 47);
+            this.textBox4.Location = new System.Drawing.Point(225, 58);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(11, 23);
+            this.textBox4.Size = new System.Drawing.Size(13, 27);
             this.textBox4.TabIndex = 6;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.clickImage);
             this.groupBox3.Controls.Add(this.refreshClick);
-            this.groupBox3.Location = new System.Drawing.Point(12, 3);
+            this.groupBox3.Location = new System.Drawing.Point(16, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(387, 353);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(498, 533);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Имитация работы";
+            this.groupBox3.Text = "Вывод";
+            // 
+            // clickImage
+            // 
+            this.clickImage.Location = new System.Drawing.Point(20, 22);
+            this.clickImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clickImage.Name = "clickImage";
+            this.clickImage.Size = new System.Drawing.Size(442, 387);
+            this.clickImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.clickImage.TabIndex = 0;
+            this.clickImage.TabStop = false;
+            this.clickImage.Click += new System.EventHandler(this.clickImage_Click);
+            // 
+            // refreshClick
+            // 
+            this.refreshClick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.refreshClick.Image = global::TestAd.Properties.Resources.refresh_icon_png_2;
+            this.refreshClick.Location = new System.Drawing.Point(229, 435);
+            this.refreshClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.refreshClick.Name = "refreshClick";
+            this.refreshClick.Size = new System.Drawing.Size(61, 92);
+            this.refreshClick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.refreshClick.TabIndex = 1;
+            this.refreshClick.TabStop = false;
+            this.refreshClick.Click += new System.EventHandler(this.refreshClick_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 365);
+            this.ClientSize = new System.Drawing.Size(1060, 579);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Демонстрация стратегии на примере";
-            ((System.ComponentModel.ISupportInitialize)(this.clickImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).EndInit();
             this.panel2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -438,6 +429,8 @@ namespace TestAd
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.clickImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshClick)).EndInit();
             this.ResumeLayout(false);
 
         }

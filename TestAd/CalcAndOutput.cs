@@ -97,7 +97,7 @@ namespace TestAd
             BannerOutput[1] = 100;
             BannerOutput[2] = 100;
 
-            BannerEarning[0] = rnd.Next(15, 25);
+            BannerEarning[0] = rnd.Next(18, 25);
             BannerEarning[1] = rnd.Next(15, 25);
             BannerEarning[2] = rnd.Next(15, 25);
         }
