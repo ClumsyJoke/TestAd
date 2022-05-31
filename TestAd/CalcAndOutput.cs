@@ -53,15 +53,15 @@ namespace TestAd
             if (BannerOutput[2] == 100)
             {
                 startDataCollected = true;
-                RefreshInterval();
+                
             }
             if (startDataCollected)
             {
+                RefreshInterval();
                 double maxU = BannerInterval.Max();
-                Id = Array.IndexOf(BannerInterval, maxU);
-                BannerOutput[Id]++;
-                int totalCount = bannerOutput[0] + bannerOutput[1] + bannerOutput[2];
-                BannerInterval[Id] = BannerEarning[Id] / BannerOutput[Id] + Math.Sqrt(2 * Math.Log(totalCount) / BannerOutput[Id]);
+                Id = Array.IndexOf(BannerInterval, maxU);    
+                //int totalCount = bannerOutput[0] + bannerOutput[1] + bannerOutput[2];
+                //BannerInterval[Id] = BannerEarning[Id] / BannerOutput[Id] + Math.Sqrt(2 * Math.Log(totalCount) / BannerOutput[Id]);
             }
             else
                 ChangeBanner();
@@ -79,7 +79,7 @@ namespace TestAd
         public Bitmap ReturnBanner()
         {
             ChoiseId();
-            //BannerOutput[Id]++;
+            BannerOutput[Id]++;
             return ad[Id];
         }
 
